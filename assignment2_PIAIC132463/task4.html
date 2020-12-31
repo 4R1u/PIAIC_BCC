@@ -1,0 +1,35 @@
+<script>
+var marks1=Number(prompt("Input marks in sub1"));
+var marks2=Number(prompt("Input marks in sub2"));
+var marks3=Number(prompt("Input marks in sub3"));
+var marks=marks1+marks2+marks3;
+</script>
+<p>Total marks:300</p>
+<script>
+document.write("<p>Marks obtained : "+marks+"</p>");
+document.write("<p>Percentage : "+((marks/300)*100)+"%</p>");
+if (((marks/300)*100)>=80){
+var grade="A-one";
+var rem="Excellent";
+}
+else{
+if (((marks/300)*100)>=70){
+var grade="A";
+var rem="Good";
+}
+else{
+if (((marks/300)*100)>=60){
+var grade="B";
+var rem="You need to improve";
+}
+else{
+if (((marks/300)*100)<60){
+var grade="Fail";
+var rem="Sorry"
+}
+}
+}
+}
+document.write("<p>Grade : "+grade+"</p>");
+document.write("<p>Remarks : "+rem+"<p>");
+</script>

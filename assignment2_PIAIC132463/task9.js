@@ -1,0 +1,1 @@
+"AEIOUaeiou".includes(prompt("Enter letter"));

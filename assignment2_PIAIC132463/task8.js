@@ -1,0 +1,1 @@
+console.log(Math.sign(prompt("Enter number")));
