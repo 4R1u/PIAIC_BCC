@@ -1,0 +1,13 @@
+var c_a = ["black", "silver", "gray", "white", "maroon", "red", "purple", "fuchsia", "green", "lime", "olive", "yellow", "navy", "blue", "teal", "aqua"];
+c_a.unshift(prompt("What color to prepend to array of colors?"));
+console.log("["+c_a+"]");
+c_a.push(prompt("What color to append to array of colors?"));
+console.log("["+c_a+"]");
+c_a.shift();
+console.log("Removing first item: "+c_a+"]");
+c_a.pop();
+console.log("Removing last item: ["+c_a+"]");
+c_a.splice(Number(prompt("What index would you like to add a color at?")),0,prompt("What color would you like to add?"));
+console.log("["+c_a+"]");
+c_a.splice(prompt("What index would you like to delete an item from?"), 1);
+console.log("["+c_a+"]");
